@@ -50,11 +50,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-<<<<<<< HEAD
             <a class="navbar-brand" href="#home"><img src="images/accountant_in_a_box_logo.png" alt=""></a>
-=======
-            <a class="navbar-brand" href="#home"><img src="images/logo.png" alt=""></a>
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -75,11 +71,7 @@
             <li><a href="#pricing">Pricing</a></li>
 
               <li><a href="#contact">Contact</a></li>
-<<<<<<< HEAD
               <li><a class="btn btn-primary btn-lg btn-login" href="https://accountant-in-a-box-enterprise-mnoe-uat.maestrano.io/dashboard/#/apps">Login</a></li>
-=======
-              <li><a class="btn btn-primary btn-lg btn-login" href="https://accountant-in-a-box-enterprise-mnoe-uat.maestrano.io/en/mnoe/auth/users/sign_in">Login</a></li>
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
             </ul>
                                     
           </div><!--/.nav-collapse -->
@@ -546,11 +538,7 @@
    
                 </ul>
             </div>
-<<<<<<< HEAD
                 </div>
-=======
-            	</div>
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
                 <br>
                 <div id="service" style="display:none;">
 
@@ -945,7 +933,6 @@
             });
 
 
-<<<<<<< HEAD
             $('#pricing').find('.features').click(function(){
               //Expand or collapse this panel
               $(this).next().slideToggle('fast');
@@ -954,16 +941,6 @@
             });
         
         
-=======
-			$('#pricing').find('.features').click(function(){
-			  //Expand or collapse this panel
-			  $(this).next().slideToggle('fast');
-			  $(this).toggleClass('toggled');
-		
-			});
-		
-		
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
            $(".tabproduct").click(function(){
                 $(".tabservice").removeClass('current');
                 $(".tabproduct").addClass('current');
@@ -1010,7 +987,6 @@
            });
 
 
-<<<<<<< HEAD
            $("#contact_form").validationEngine({promptPosition : "bottomLeft",scroll:false});
             // process the form
             $('#contact_form').submit(function(event){
@@ -1054,54 +1030,6 @@
         
             // stop the form from submitting the normal way and refreshing the page
             event.preventDefault();
-=======
-		   $("#contact_form").validationEngine({promptPosition : "bottomLeft",scroll:false});
-			// process the form
-			$('#contact_form').submit(function(event){
-	
-			// get the form data
-			// there are many ways to get this data using jQuery (you can use the class or id also)
-			var formData = {
-				'name'              : $('input[name=contactname]').val(),
-				'company'           : $('input[name=company]').val(),
-				'contactemail'      : $('input[name=contactemail]').val(),
-				'contactphone'	    : $('input[name=contactphone]').val(),
-				'contactphone'	    : $('input[name=contactphone]').val()
-			};
-			
-			if($('input[name=contactemail]').val()=='')
-			{
-				return false;
-			}
-			// process the form
-			$.ajax({
-				type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-				url         : 'contactsubmit.php', // the url where we want to POST
-				data        : formData, // our data object
-				dataType    : 'json', // what type of data do we expect back from the server
-				encode      : true
-			})
-			// using the done promise callback
-			.done(function(data) {
-				console.log(data);
-
-				// here we will handle errors and validation messages
-				if (data.success) {
-						$('#success').html("<div class='alert alert-success'>");						
-						$('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
-						$('#success > .alert-success').append('</div>');
-						//clear all fields
-						$('#contact_form').trigger("reset");
-				}
-						// here we will handle errors and validation messages
-			});				
-		
-			// stop the form from submitting the normal way and refreshing the page
-			event.preventDefault();
-		});
-	
-	 
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
         });
     
      

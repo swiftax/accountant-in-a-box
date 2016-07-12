@@ -6014,8 +6014,6 @@ ul, li {
   .xero-love p {
     color: rgba(255, 255, 255, 0.7); }
 
-  
-
 .arrow-right {
   margin: 0 auto;
   width: 0;
@@ -6364,7 +6362,6 @@ footer {
 #loveXeroVideo {
   position: fixed; }
 
-
 .popup-close-btn {
   width: 40px;
   height: 40px;
@@ -6378,8 +6375,6 @@ footer {
   top: 0; }
   .popup-close-btn:hover {
     background: url(../images/close-btn.png) no-repeat center center #eee; }
-
-
 
 @media (max-width: 767px) {
   h1 {
@@ -6588,7 +6583,6 @@ footer {
     top: 20%; }
   #loveXeroVideo {
     height: 300px; }
-
   .popup-close-btn {
     right: 0;
     top: -40px; } }
@@ -7008,8 +7002,7 @@ footer {
     right: -40px;
     top: 0; }
   #loveXeroVideo {
-    height: 80%; }
- }
+    height: 80%; } }
 
 @media (min-width: 1600px) {
   h1 {
@@ -7146,22 +7139,9 @@ footer {
 .services h2  {
   color: #004fa5;
   text-transform: uppercase;
-<<<<<<< HEAD
 
 }
 
-.services h3 {
-  color: #004fa5;
-}
-=======
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
-
-.services .business-panel .business-two:before {
-  background: none;
-}
-
-<<<<<<< HEAD
-=======
 .services h3 {
   color: #004fa5;
 }
@@ -7170,7 +7150,6 @@ footer {
   background: none;
 }
 
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
 /* Thank You Page */
 
 .thankyou-panel {
@@ -7255,7 +7234,6 @@ footer {
     border-radius: 3px;
     font-family: "montserratbold";
     font-size: 14px;
-<<<<<<< HEAD
 }
 
 .navbar-default .navbar-nav li > a.btn-login:hover {
@@ -7274,30 +7252,8 @@ footer {
 
 @media (min-width: 768px) {  
 
-=======
-}
-
-.navbar-default .navbar-nav li > a.btn-login:hover {
-  color: #f49a0b;
-  background-color: #fff;
-  box-shadow: inset 2px 2px 0 0 #fff, inset -2px -2px 0 0 #fff;
-}
-
-.navbar-default .navbar-nav li > a.btn-login:focus {
-  color: #f49a0b;
-}
-
-
-
-@media (min-width: 768px) {  
-
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
 .navbar-default .navbar-nav li > a.btn-login {
   background-color: #fe8605;
   margin-top: -0.5em;
 }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1e4d7455bd5888658849710f99b0ce8ce6fd6385
