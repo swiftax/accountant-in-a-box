@@ -27,7 +27,27 @@ $('#loveXeroVideoBtn').click(function(){
     //$('html, body').animate({scrollTop: 0}, 500);
     $('#overlay').fadeIn(200);
     $('#loveXeroVideo').delay(200).fadeIn(300);       
-});      
+});
+       
+
+//close all popup
+$('.popup-close-btn, #overlay').click(function(){
+    player.api('pause');
+    $('.popup-box').fadeOut(100);   
+    $('#overlay').delay(100).fadeOut(300);         
+});
+
+var iframe = document.getElementById('VimeoPreview');
+// $f == Froogaloop
+var player = $f(iframe);
+
+$('#previewAccountantBox').click(function(){
+    //player.api('play');
+    //$('html, body').animate({scrollTop: 0}, 500);
+    $('#overlay').fadeIn(200);
+    $('#preview').delay(200).fadeIn(300);       
+});
+       
 
 //close all popup
 $('.popup-close-btn, #overlay').click(function(){
