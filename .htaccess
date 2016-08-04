@@ -1,0 +1,8 @@
+RewriteCond %{HTTP_HOST} ^www\.accountantinabox\.co$
+RewriteRule ^/?$ "http\:\/\/accountantinabox\.co\/" [R=301,L]
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
+
+RewriteCond %{HTTP_HOST} ^23\.229\.227\.40
+RewriteRule (.*) http://www.accountantinabox.co/$1 [R=301,L]

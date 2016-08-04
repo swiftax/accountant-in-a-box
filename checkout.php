@@ -71,7 +71,7 @@
                <div class="row">                    
                     <aside class="col-sm-12 contact-form" style="width:100%;">
                         
-                        <form id="checkout" action="process.php" method="post" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms of Service'); return false; }">
+                        <form id="checkout" action="process.php" method="post" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Online Privacy Policy'); return false; }">
                             <input type="hidden" name="planid" value="<?php echo $_REQUEST['planid'];?>" />
                             <h2>CHECKOUT</h2>
                             <p style="text-transform:uppercase"><strong>You have selected the  <?php echo $_REQUEST['planname'];?> plan for $<?php echo $_REQUEST['price'].'.00';?></strong></p>
@@ -456,7 +456,7 @@
 </p>
 
 
-<p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;"><strong>IMPORTANT.  PLEASE READ THESE TERMS, AS WELL AS ACCOUNTANT IN A BOX’S PRIVACY POLICY LOCATED AT <a href="privacy.html">www.AccountantinABox.co/privacy</a>, CAREFULLY BEFORE USING ACCOUNTANT IN A BOX’S WEBSITE AND/OR SERVICES. BY CLICKING ON THE BOX LABELED “I HAVE READ AND AGREE TO THE TERMS OF SERVICE,” CLICKING ON THE “SIGN UP FOR ACCOUNTANT IN A BOX” BUTTON AT THE TIME OF REGISTERING FOR ACCOUNTANT IN A BOX’S SERVICES, AND/OR ACCESSING OR USING ACCOUNTANT IN A BOX’S WEBSITE AND/OR SERVICES AS DEFINED HEREIN, YOU ARE ACCEPTING AND AGREEING TO BE BOUND BY THESE TERMS. YOU SHOULD MAINTAIN A COPY OF THESE TERMS FOR YOUR RECORDS. </strong> </span></span></span></span></p>
+<p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;"><strong>IMPORTANT.  PLEASE READ THESE TERMS, AS WELL AS ACCOUNTANT IN A BOX’S PRIVACY POLICY LOCATED AT <a href="privacy.html" target="_blank">www.AccountantinABox.co/privacy</a>, CAREFULLY BEFORE USING ACCOUNTANT IN A BOX’S WEBSITE AND/OR SERVICES. BY CLICKING ON THE BOX LABELED “I HAVE READ AND AGREE TO THE TERMS OF SERVICE,” CLICKING ON THE “SIGN UP FOR ACCOUNTANT IN A BOX” BUTTON AT THE TIME OF REGISTERING FOR ACCOUNTANT IN A BOX’S SERVICES, AND/OR ACCESSING OR USING ACCOUNTANT IN A BOX’S WEBSITE AND/OR SERVICES AS DEFINED HEREIN, YOU ARE ACCEPTING AND AGREEING TO BE BOUND BY THESE TERMS. YOU SHOULD MAINTAIN A COPY OF THESE TERMS FOR YOUR RECORDS. </strong> </span></span></span></span></p>
 
 <p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;"><strong>IF YOU OR THE ENTITY YOU REPRESENT DO NOT AGREE TO THESE TERMS, THEN DO NOT USE ACCOUNTANT IN A BOX’S WEBSITE AND/OR SERVICES,  DO NOT CLICK ON THE BOX LABELED “I HAVE READ AND AGREE TO THE TERMS OF SERVICE” OR THE “SIGN UP FOR ACCOUNTANT IN A BOX” BUTTON WHEN PROMPTED, AND DO NOT EXECUTE A REGISTRATION OR REGISTRATION INCORPORATING THESE TERMS. </strong></span></span></span></span></p>
 
@@ -492,7 +492,7 @@
 
 <p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;">h. “You,” “Your,” or “User” means any individual or entity which uses Accountant in a Box’s Website or that registers for Accountant in a Box’s Services.</span></h5>
 
-<p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;">i. “Website” means Accountant in a Box’s websites located at <a href="http://www.AccountantInABox.com" target="_blank">www.AccountantInABox.com</a>  and <a href="http://www.AccountantInABox.co">www.AccountantInABox.co</a>, and all associated content, including, without limitation, all text, information, images, applications, templates software and other information, services, and materials on such website. </span></h5>
+<p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;">i. “Website” means Accountant in a Box’s websites located at <a href="http://www.AccountantInABox.com" target="_blank">www.AccountantInABox.com</a>  and <a href="http://www.AccountantInABox.co" target="_blank">www.AccountantInABox.co</a>, and all associated content, including, without limitation, all text, information, images, applications, templates software and other information, services, and materials on such website. </span></h5>
 
 <p><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 12px;"><span style="color: #000000;"><span style="font-family: Arial, serif;">j. “IRS” means the United States Internal Revenue Service. </span></h5>
 
@@ -698,11 +698,11 @@ No waiver by Accountant in a Box of any of the provisions of these Terms is effe
 
                             <div class="form-group checkbox">
                             <label style="font-size:1em; font-family:sans-serif;">
-                                <input type="checkbox" name="checkbox" value="check" id="agree"><span class="cr"><i class="cr-icon fa fa-check"></i></span> <strong>I have read and agree to the Terms of Service</strong> </label></div>
+                                <input type="checkbox" name="checkbox" value="check" id="agree"><span class="cr"><i class="cr-icon fa fa-check"></i></span> <strong>I have read and agree to the Terms and Conditions and Online Privacy Policy</strong> </label></div>
 
                                 <div class="agree-terms"><?php 
                                 if(empty($_POST['agree']) || $_POST['agree'] != 'agree') {
-    echo 'Please indicate that you have read and agree to the Terms of Service';
+    echo 'Please indicate that you have read and agree to the Terms and Conditions and Online Privacy Policy';
 } ?>
     </div>
                             <div class="form-group clear-m-b col-sm-12">
@@ -772,7 +772,7 @@ No waiver by Accountant in a Box of any of the provisions of these Terms is effe
                     <span class="copy-right">&copy; 2016 Accountant In A Box Inc. All rights reserved</span> 
                     <div class="footer-links">
                         <a href="checkout.php">Terms of service</a>
-                        <a href="#">Privacy Policy</a>
+                        <a href="privacy.html">Privacy Policy</a>
                                         <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=fFzbrKnEGDXO31qVXBy1huXJkctKQC1oeWFpcGe2FkDx9Qf3bLvWCe7SWE2s"></script></span>
                     </div>
        

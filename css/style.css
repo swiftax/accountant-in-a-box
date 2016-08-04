@@ -7427,3 +7427,24 @@ form#checkout {
 }
 }
 
+#previewAccountantBox {
+  text-align: right;
+  clear: both;
+}
+.main {
+  margin-top: 2em;
+}
+
+.banner-panel .affiliate p {
+  margin-left: auto;
+
+}
+
+.affiliate {
+  text-align: center;
+}
+
+.snapshot {
+  text-align: center;
+}
+
