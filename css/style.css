@@ -7448,3 +7448,9 @@ form#checkout {
   text-align: center;
 }
 
+.firms-h3 { 
+    color:#fff;
+    background:#fe8605;
+    padding: 0.25em 0;
+  }
+
